@@ -26,3 +26,18 @@ sbatch run.slurm
 
 If a first step of download using irods is needed, use the irods_pipeline Snakemakefile.
 
+## Pipeline description:
+
+- Step 0 (optional) 
+download of the dataset using irods 
+ 
+- Step 1: fastq 
+FastQC v0.11.9  
+ 
+- Step 2: trimGalore 
+TrimGalore v0.6.6 
+ 
+- Step 3: metaphlan3 
+Metaphlan v3.0.6 
+ 
+
