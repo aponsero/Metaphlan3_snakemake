@@ -24,4 +24,5 @@ By default the system will submit a maximum of 60 jobs. To run the complete pipe
 sbatch run.slurm
 '''
 
+If a first step of download using irods is needed, use the irods_pipeline Snakemakefile.
 
