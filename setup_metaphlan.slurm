@@ -1,15 +1,15 @@
 #!/bin/bash
 
 ### Optional. Set the job name
-#SBATCH --job-name=PM_MetaP
+#SBATCH --job-name=SLURM_MetaP
 ### REQUIRED. Specify the PI group for this job
-#SBATCH --account=bhurwitz
+#SBATCH --account=
 ### Optional. Request email when job begins and ends
 ### SBATCH --mail-type=ALL
 ### Optional. Specify email address to use for notification
-### SBATCH --mail-user=aponsero@email.arizona.edu
+### SBATCH --mail-user=
 ### REQUIRED. Set the partition for your job.
-#SBATCH --partition=standard
+#SBATCH --partition=
 ### REQUIRED. Set the number of cores that will be used for this job.
 #SBATCH --ntasks=5
 ### REQUIRED. Set the memory required for this job.
@@ -20,9 +20,9 @@
 source ~/.bashrc
 source activate metaphlan3
 
-cd /xdisk/bhurwitz/mig2020/rsgrps/bhurwitz/alise/my_scripts/Metaphlan3_snakemake  
+cd Metaphlan3_snakemake  
 
-metaphlan input/SRR5002371_trimmed.fq --input_type fastq
+metaphlan test/mock1_454.fastq --input_type fastq
 
 
 
